@@ -24,5 +24,11 @@ namespace ExpenseReporter
         {
             InitializeComponent();
         }
+        private void Button_Click(object Sender, RoutedEventArgs e)
+        {
+            //View Expense reports
+            ExpenseReportPage erp = new ExpenseReportPage();
+            this.NavigationService.Navigate(erp);
+        }
     }
 }
