@@ -27,7 +27,7 @@ namespace ExpenseReporter
         private void Button_Click(object Sender, RoutedEventArgs e)
         {
             //View Expense reports
-            ExpenseReportPage erp = new ExpenseReportPage();
+            ExpenseReportPage erp = new ExpenseReportPage(this.peopleListBox.SelectedItem);
             this.NavigationService.Navigate(erp);
         }
     }
